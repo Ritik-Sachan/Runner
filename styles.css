@@ -1,0 +1,132 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    user-select: none;
+  }
+  
+  body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .game {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  button {
+    background-color: lime;
+    border: 10px;
+    border-radius: 5px;
+    position: fixed;
+    margin-top: 1px;
+  }
+  
+  .nftTotalScore {
+    position: absolute;
+    border: 10px;
+    border-color: aliceblue;
+    font-size: 4vmin;
+    color: lime;
+    right: 30vmin;
+    top: 7vmin;
+  }
+  
+  .gweiTotalScore {
+    position: absolute;
+    color: lime;
+    font-size: 4vmin;
+    right: 30vmin;
+    top: 2vmin;
+  }
+  
+  .score {
+    position: absolute;
+    color: lime;
+    font-size: 4vmin;
+    right: 2vmin;
+    top: 2vmin;
+  }
+  .score1 {
+    position: absolute;
+    color: lime;
+    font-size: 4vmin;
+    right: 2vmin;
+    top: 7vmin;
+  }
+  
+  .button1 {
+    position: absolute;
+    color: white;
+    font-size: 3vmin;
+    left: 3vmin;
+    top: 2vmin;
+  }
+  
+  .button2 {
+    position: absolute;
+    color: white;
+    font-size: 3vmin;
+    left: 3vmin;
+    top: 7vmin;
+  }
+  
+  .button3 {
+    position: absolute;
+    color: white;
+    font-size: 3vmin;
+    left: 3vmin;
+    top: 12vmin;
+  }
+  .start-screen {
+    position: absolute;
+    font-size: 5vmin;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  .ground {
+    --left: 0;
+    position: absolute;
+    width: 300%;
+    bottom: 0;
+    left: calc(var(--left) * 1%)
+  }
+  
+  .player {
+    --bottom: 0px;
+    position: absolute;
+    left: 1%;
+    height: 22%;
+    bottom: calc(var(--bottom) * 1%);
+
+  }
+  
+  .obstacle {
+    position: absolute;
+    left: calc(var(--left) * 1%);
+    height: 22%;
+    bottom: 10px;
+  }
+  .obstacle2 {
+    position: absolute;
+    left: calc(var(--left) *1%);
+    height: 22%;
+    bottom: 135px;
+  }
+  
+  .nft {
+    position: absolute;
+    left: calc(var(--left) * 1%);
+    height: 22%;
+    bottom: 135px;
+    
+  }
